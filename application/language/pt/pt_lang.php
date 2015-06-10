@@ -1,0 +1,29 @@
+<?php
+
+$lang['header'] = "Inscrição para Workshops";
+$lang['numpasaporte'] = "Passaporte (Sem pontos ou listras, ou espaços, ou qualquer coisa adicional)";
+$lang['ingresapasaporte'] = "Número do passaporte";
+$lang['tunombre'] = "Nome";
+$lang['ingresanombre'] = "Entre com seu primeiro nome";
+$lang['tuapellido'] = "Último sobrenome";
+$lang['ingresaapellido'] = "Último sobrenome";
+$lang['tucorreo'] = "E-mail";
+$lang['ingresacorreo'] = "Entre seu email";
+$lang['confirmacorreo'] = "Confirme seu e-mail";
+$lang['ingresaconfirmacorreo'] = "Entre seu email";
+$lang['pais'] = "Selecione seu país";
+$lang['selecciona'] = "Selecione...";
+$lang['selecciona1'] = "Selecione seu primeiro workshop";
+$lang['selecciona2'] = "Selecione seu segundo workshop";
+$lang['selecciona3'] = "Selecione seu terceiro workshop";
+$lang['selecciona4'] = "Selecione seu quarto workshop";
+$lang['enviar'] = "Envie a inscrição";
+$lang['repetido'] = 'Você selecionou o mesmo workshop duas vezes! Você não está inscrito em nenhum. Por favor, corriga as repetições.';
+$lang['yainscrito'] = "Você já selecionou seus workshops com este número de passaporte.";
+$lang['errorcorreo'] = "Mails digitados não coincidem. Por favor, corrija.";
+$lang['notaimportante'] = "OBSERVAÇÃO IMPORTANTE:";
+$lang['notaimportantetext'] = "Cada participante terá oportunidade de assistir 4 workshops.  Dois na quarta-feira e dois no domingo.  Os workshops de quarta-feira são numerados de 1 a 12 e os de domingo são numerados de 13 a 24. Por favor, selecione 2 para quarta-feira e 2 para domingo. Faça sua seleção no fim dessa página.";
+$lang['notaadicional'] = "OBSERVAÇÃO ADICIONAL:";
+$lang['notaadicionaltext'] = "Observe que o programa impede que você selecione o mesmo workshop duas vezes, e você também não pode finalizar sem escolher os 4 workshops.";
+$lang['talleresmiercoles'] = "WORKSHOPS QUARTA-FEIRA:";
+$lang['talleresdomingo'] = "WORKSHOPS DOMINGO:";
