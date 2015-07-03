@@ -78,4 +78,47 @@ class Modelo extends CI_Model {
         return ($cadena);
     }
 
+    function obtenerDatosPDFIndividual($pasaporte) {
+
+        $datos = array();
+
+        $query = $this->db->select('nombre, apellido')->from('persona')->where(array('pasaporte' => $pasaporte))->get();
+        $row = $query->result_array();
+        $nombre = $row[0]['nombre'];
+        $nombre = $nombre . " " . $row[0]['apellido'];
+        $datos['nombre'] = $nombre;
+
+        $talleres = array();
+
+        for ($horario = 1; $horario <= 4; $horario++) {
+            $tallerActual = array();
+
+            $query = $this->db->select('taller')->from('inscripciones')->where(array('pasaporte' => $pasaporte, 'horario' => $horario))->get();
+            $row = $query->result_array();
+            $tallerId = $row[0]['Taller'];
+
+            $query = $this->db->select('nombre')->from('taller_nombre')->where(array('tallerID' => $tallerId))->get();
+            $nombres = array();
+            foreach ($query->result() as $row) {
+                array_push($nombres, $row->nombre);
+            }
+            $tallerActual['nombres'] = $nombres;
+
+            $query = $this->db->select('tallerista, ubicacion')->from('taller')->where(array('tallerID' => $tallerId))->get();
+            $row = $query->row_array();
+            $tallerActual['tallerista'] = $row['tallerista'];
+            $tallerActual['ubicacion'] = $row['ubicacion'];
+
+            array_push($talleres, $tallerActual);
+        }
+
+        $datos['talleres'] = $talleres;
+
+        return $datos;
+    }
+
+    function obtenerDatosTodosLosPDF() {
+        
+    }
+
 }
