@@ -82,11 +82,19 @@ class Modelo extends CI_Model {
 
         $datos = array();
 
-        $query = $this->db->select('nombre, apellido')->from('persona')->where(array('pasaporte' => $pasaporte))->get();
+        $query = $this->db->select('nombre, apellido, pais')->from('inscripciones')->where(array('pasaporte' => $pasaporte))->get();
         $row = $query->result_array();
+        
+        if(count($row) == 0){
+            return false;
+        }
+
+
         $nombre = $row[0]['nombre'];
         $nombre = $nombre . " " . $row[0]['apellido'];
+        $pais = $row[0]['pais'];
         $datos['nombre'] = $nombre;
+        $datos['pais'] = $pais;
 
         $talleres = array();
 
@@ -117,8 +125,14 @@ class Modelo extends CI_Model {
         return $datos;
     }
 
-    function obtenerDatosTodosLosPDF() {
-        
+    function obtenerTodosLosPasaportes() {
+        $query = $this->db->select('pasaporte')->from('persona')->order_by("pasaporte", "asc")->get();
+        $pasaportes = array();
+        foreach ($query->result() as $row)
+        {
+            $pasaportes[] = $row->pasaporte;
+        }
+        return $pasaportes;
     }
 
 }

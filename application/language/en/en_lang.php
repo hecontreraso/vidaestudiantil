@@ -1,6 +1,7 @@
 <?php
 
 $lang['header'] = "Registration for Workshops";
+$lang['header-gen'] = "Download and print your workshop registration";
 $lang['numpasaporte'] = "Passport (No points or stripes, or spaces, or anything additional)";
 $lang['ingresapasaporte'] = "passport #";
 $lang['tunombre'] = "Your first name";
@@ -27,3 +28,4 @@ $lang['notaadicional'] = "ADDITIONAL NOTE:";
 $lang['notaadicionaltext'] = "Note that the program prevents you from choosing the same workshop twice, and you can send it without choosing the 4 workshops";
 $lang['talleresmiercoles'] = "WEDNESDAY WORKSHOPS:";
 $lang['talleresdomingo'] = "SUNDAY WORKSHOPS:";
+$lang['descargar'] = "Download";

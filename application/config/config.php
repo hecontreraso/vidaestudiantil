@@ -19,7 +19,7 @@ if (!defined('BASEPATH'))
   | environments.
   |
  */
-$config['base_url'] = 'http://localhost/';
+$config['base_url'] = 'http://inscripciones.vidaestudiantil.com/';
 
 /*
   |--------------------------------------------------------------------------

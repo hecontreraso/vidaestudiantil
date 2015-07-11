@@ -1,6 +1,7 @@
 <?php
 
 $lang['header'] = "Inscripción de talleres So1o";
+$lang['header-gen'] = "Descarga e imprime tu inscripción de talleres";
 $lang['numpasaporte'] = "Pasaporte (Sin puntos ni rayas, ni espacios, ni nada adicional)";
 $lang['ingresapasaporte'] = "# de pasaporte";
 $lang['tunombre'] = "Tu nombre";
@@ -27,3 +28,4 @@ $lang['notaadicional'] = "NOTA ADICIONAL:";
 $lang['notaadicionaltext'] = "Ten en cuenta que el programa evita que tu puedas escoger dos veces el mismo taller y también que puedas enviarlo sin haber escogido los 4 talleres";
 $lang['talleresmiercoles'] = "TALLERES DEL DÍA MIÉRCOLES:";
 $lang['talleresdomingo'] = "TALLERES DEL DÍA DOMINGO:";
+$lang['descargar'] = "Descargar";

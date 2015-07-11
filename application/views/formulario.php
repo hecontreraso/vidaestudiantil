@@ -202,9 +202,6 @@
                         </form>
                     </div>
                 </div>
-                Web development by estebancontreras.co
-                <br>
-                <br>
             </div>
         </div>
     </body>
