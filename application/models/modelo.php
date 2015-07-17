@@ -91,7 +91,7 @@ class Modelo extends CI_Model {
 
 
         $nombre = $row[0]['nombre'];
-        $nombre = $nombre . " " . $row[0]['apellido'];
+        $nombre = $row[0]['apellido'] . " " . $nombre;
         $pais = $row[0]['pais'];
         $datos['nombre'] = $nombre;
         $datos['pais'] = $pais;
@@ -126,7 +126,7 @@ class Modelo extends CI_Model {
     }
 
     function obtenerTodosLosPasaportes() {
-        $query = $this->db->select('pasaporte')->from('persona')->order_by("pasaporte", "asc")->get();
+        $query = $this->db->select('pasaporte')->from('persona')->order_by("apellido", "asc")->get();
         $pasaportes = array();
         foreach ($query->result() as $row)
         {
