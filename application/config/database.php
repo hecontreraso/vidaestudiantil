@@ -52,9 +52,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'slm2015_user';
-$db['default']['password'] = 'Q_!mc+qczpe]';
-$db['default']['database'] = 'slm2015_inscripciones';
+$db['default']['username'] = 'HIDDEN';
+$db['default']['password'] = 'HIDDEN';
+$db['default']['database'] = 'HIDDEN';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
